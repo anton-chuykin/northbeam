@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
+    <consumer name="order.data.consumer" queue="nb_orderdata.queue" connection="db" handler="KozakGroup\Northbeam\Consumer\OrderDataConsumer::process"/>
+    <consumer name="order.cancel.consumer" queue="nb_ordercancel.queue" connection="db" handler="KozakGroup\Northbeam\Consumer\OrderCancelConsumer::process"/>
+
+</config>

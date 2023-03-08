@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <north_beam>
+            <general>
+                <base_url>https://api.northbeam.io/v1</base_url>
+            </general>
+        </north_beam>
+    </default>
+</config>

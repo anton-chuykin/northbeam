@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_place_after">
+        <observer name="post_request_data_order"
+                  instance="KozakGroup\Northbeam\Observer\SendDataOrderAPI"/>
+    </event>
+    <event name="order_cancel_after">
+        <observer name="put_request_cancel_order"
+                  instance="KozakGroup\Northbeam\Observer\CancelOrderAPI"/>
+    </event>
+    <event name="sales_order_creditmemo_save_after">
+        <observer name="put_request_data_order"
+                  instance="KozakGroup\Northbeam\Observer\UpdateDataOrderAPI"/>
+    </event>
+</config>
